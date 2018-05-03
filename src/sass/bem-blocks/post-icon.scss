@@ -1,0 +1,36 @@
+.post-icon{
+	display: flex;
+	align-items:center;
+	margin-right: 12px;
+
+	&__image{
+		width:24px;
+		height: 24px;
+		position: relative;
+		margin-right: 8px;
+	}
+
+	&__sum{		 
+	  font-size: 9px;
+	  font-weight: 500;
+	  font-style: normal;
+	  text-align: center;  
+	  color: $white;
+	  width: 24px;
+	  height: 16px;
+	  line-height: 16px;
+	  border-radius: 100px;
+	  background-color: $black;
+	  position:absolute;
+	  content:'';
+	  top:-10px;
+	  right: -14px;
+	  z-index: 2;
+	}
+
+
+	&__count{
+		font-size: 13px;
+		font-weight: 600;
+	}
+}

@@ -1,0 +1,83 @@
+.user{
+    display: flex;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    margin-left: 21px;
+    margin-right: 20px;
+    margin-bottom: 19px;
+    min-height: 126px;
+
+    @media screen and(max-width:768px ){
+      flex-wrap: nowrap;      
+      min-height: 78px;
+    }
+
+     @media screen and(max-width:480px ){
+      flex-wrap: wrap;
+      min-height: 100px;
+    }
+
+  &__avatar{
+    width: 48px;
+    height: 48px;
+
+    img{      
+      width: 48px;
+    }
+  }
+
+  &__info{
+    display: flex;   
+    flex-direction: column;padding-left: 18px; 
+  }
+
+  &__name{
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 6px;
+   
+    @media screen and(max-width:768px){  
+     min-width: 200px;     
+    }
+  }
+
+  &__location{
+    font-size: 11px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    position: relative;
+    padding-left: 14px;
+     
+     &:before{
+      content:'';
+      width: 12px;
+      height: 14px;
+      top:0;
+      left: 0;
+      position: absolute;
+      background:url(../image/icons/svg/locate-places-on-maps.svg)0 0 no-repeat;
+     } 
+  }
+  
+}
+.description{
+    padding-top: 14px;
+    font-weight: 400;
+    height: auto;    
+    overflow: hidden;
+
+    @media screen and(max-width:768px){     
+      padding-top: 0;     
+    }
+
+    @media screen and(max-width:480px){ 
+      padding-top: 14px;     
+    }
+  p{
+    line-height: 19px;
+  }
+}
